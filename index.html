@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://googleapis.com" />
+    <link rel="preconnect" href="https://gstatic.com" crossorigin />
+    <link
+      href="https://googleapis.com/css2?family=DM+Sans:wght@400;500&family=Space+Grotesk:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <select id="filtroLenguaje"></select>
+      <select id="filtrotipo"></select>
+      <select id="filtrogenero"></select>
+      <input type="search" id="Buscar" placeholder="filtrar por" />
+    </header>
+    <section class="todo">
+      <main id="series-Container"></main>
+      <form id="agregarPelis">
+        <label for="name">Nombre De La Pelicula</label>
+        <input type="text" id="nombre" name="name" />
+        <label for="language">Lenguaje De La Pelicula</label>
+        <input type="text" id="lenguaje" name="language" />
+        <label for="type">Tipo De Pelicula</label>
+        <input type="text" id="tipo" name="type" />
+        <button type="submit" id="agregarPelisBoton">Agregar</button>
+      </form>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
